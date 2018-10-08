@@ -17,7 +17,11 @@ module.exports = {
           {
             loader: path.resolve('./utils/custom-loader.js'),
             options: {}
-          }
+          },
+          {
+            loader: path.resolve('./utils/another-loader.js'),
+            options: {}
+          },
         ]
       }
     ]
