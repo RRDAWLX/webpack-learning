@@ -2,10 +2,12 @@ const path = require('path')
 const CustomWebpackPlugin = require('./utils/custom-webpack-plugin')
 
 module.exports = {
+  mode: 'production',
+
   entry: './src/index.js',
 
   output: {
-    filename: '[name].[chunkhash:6].js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
 
